@@ -9,12 +9,24 @@ body {
 	color: #ddd;
 	background-color: rgb(52, 59, 82);
 	margin: 0 auto;
-	padding: 0 10px;
+  padding: 0 10px;
+  
+}
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+h1 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .container {
 	width: 960px;
   margin: 0 auto;
   padding: 0 10px;
+  background-color: rgb(54, 62, 82);
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -42,7 +54,7 @@ input[type="radio"].visually-hidden {
 .top {
   position: relative;
 }
-.phones {
+.top__phones {
   position: absolute;
   top: 1px;
   right: 50px;
@@ -53,12 +65,76 @@ input[type="radio"].visually-hidden {
 }
 .top__text {
   position: absolute;
-  top: 20px;
+  top: 50px;
   left: 230px;
   text-align: center;
   font-size: 18px;
 }
 .top__price {
   color: rgb(192, 98, 44);
-  font-size: 28px;
+  font-size: 34px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.service {
+  display: flex;
+}
+.service-unit {
+  width: 300px;
+}
+.service-unit  h1{
+  text-align: center;
+  padding-bottom: 0.5rem
+}
+.about h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-top: 3rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-size: 32px;
+  color: rgb(141, 112, 95);
+}
+.about h1 {
+  text-align: center;
+  font-size: 42px;
+  color: rgb(192, 98, 44);
+}
+.proezd p {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 26px;
+}
+.proezd-video {
+  margin: 0 10%;
+}
+.map p {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 26px;
+}
+.tablo p {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 26px;
+}
+.bottom {
+  position: relative;
+}
+.bottom__phones {
+  position: absolute;
+  top: 1px;
+  right: 20px;
+}
+.bottom__text {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  font-size: 26px;
+}
+.bottom__text p {
+  padding-bottom: 0.5rem;
 }
