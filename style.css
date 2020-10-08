@@ -7,7 +7,8 @@ body {
 	line-height: 24px;
 	font-weight: 700;
 	color: #ddd;
-	background-color: rgb(52, 59, 82);
+  background: rgb(52, 59, 82);
+  background: linear-gradient(to top, #37465a, #13396b);
 	margin: 0 auto;
   padding: 0 10px;
   
@@ -25,29 +26,25 @@ h1 {
 .container {
 	width: 960px;
   margin: 0 auto;
-  padding: 0 10px;
-  background-color: rgb(54, 62, 82);
 }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 .header {
   text-transform: uppercase;
+  line-height: 36px;
   text-align: center;
   font-family: 'Balsamiq Sans', cursive, sans-serif;
 }
@@ -59,9 +56,12 @@ input[type="radio"].visually-hidden {
   top: 1px;
   right: 50px;
   font-size: 20px;
+  line-height: 24px;
 }
-.logo {
+.top__logo {
   margin-top: 20px;
+  width: 200px;
+  height: 200px;
 }
 .top__text {
   position: absolute;
@@ -100,6 +100,11 @@ input[type="radio"].visually-hidden {
   font-size: 42px;
   color: rgb(192, 98, 44);
 }
+.about__logo {
+  margin-top: 20px;
+  width: 300px;
+  height: 300px;
+}
 .proezd p {
   padding-top: 3rem;
   padding-bottom: 1rem;
@@ -121,6 +126,26 @@ input[type="radio"].visually-hidden {
   text-align: center;
   font-size: 26px;
 }
+.reviews h1 {
+  text-align: center;
+  font-size: 36px;
+}
+.review {
+  display: flex;
+  margin-bottom: 10px;
+}
+.review div {
+  margin-left: 20px;
+}
+.review__photo {
+  height: 200px;
+  width: 200px;
+}
+.review__title {
+  margin: 20px 0;
+  font-size: 24px;
+  color: bisque;
+}
 .bottom {
   position: relative;
 }
@@ -138,3 +163,57 @@ input[type="radio"].visually-hidden {
 .bottom__text p {
   padding-bottom: 0.5rem;
 }
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px)  {
+  .header {
+    line-height: 48px;
+    font-size: 42px;
+  }
+  .top__phones {
+    position: absolute;
+    top: 1px;
+    right: 50px;
+    font-size: 32px;
+  }
+  .top__text {
+    position: absolute;
+    top: 80px;
+    left: 250px;
+    text-align: center;
+    font-size: 26px;
+  }
+  .top__price {
+    color: rgb(192, 98, 44);
+    font-size: 48px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .service {
+    flex-wrap: wrap;
+    margin-left: 10%;
+  }
+  .service-unit {
+    width: 48%;
+    font-size: 24px;
+  }
+  .service-unit  h1{
+    margin-left: 10%;
+    text-align: justify;
+    padding-bottom: 0.5rem
+  }
+  .about__photo {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about__logo {
+    margin-left: 20px;
+    width: 46%;
+    height: 300px;
+  }
+  .review__text {
+    font-size: 14px;
+  }
+  .bottom__text {
+    padding-top: 3rem;
+  }
+  }
