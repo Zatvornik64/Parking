@@ -190,7 +190,7 @@ input[type="radio"].visually-hidden {
   }
   .service {
     flex-wrap: wrap;
-    margin-left: 10%;
+    margin-left: 5%;
   }
   .service-unit {
     width: 48%;
